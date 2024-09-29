@@ -14,14 +14,54 @@
         // 5. ripeti per tutte le domande del quiz
         // 6. mostra il risultato finale tramite alert
 
-        let punteggio = 0
-        let risposta = prompt("Qual'è la capitale dell'italia")
-        while(riposta === null){
-            risposta = prompt("Qual'è la capitale dell'italia")
+        alert("Benvenuto sul quiz di cultura generale di Galeazzi! Premere OK per continuare")
+
+        let points = 0
+        let answer_1 = prompt("In che anno è scoppiata la Rivoluzione francese?").toLowerCase()
+        while(answer_1 === null){
+            answer_1 = prompt("In che anno è scoppiata la Rivoluzione francese?").toLowerCase()
         }
-        if(risposta === "Roma"){
-            punteggio = punteggio + 1
+        if(answer_1 === "1789"){
+            points = points + 1
         }
+
+
+        let answer_2 = prompt("Qual'è la capitale dell'italia").toLowerCase()
+        while(answer_2 === null){
+            answer_2 = prompt("Qual'è la capitale dell'italia").toLowerCase()
+        }
+        if(answer_2 === "roma"){
+            points = points + 1
+        }
+
+
+        let nswer_3 = prompt("In quanti giorni completa la terra la sua orbita intorno al sole?").toLowerCase()
+        while(nswer_3 === null){
+            nswer_3 = prompt("In quanti giorni completa la terra la sua orbita intorno al sole?").toLowerCase()
+        }
+        if(nswer_3 === "365"){
+            points = points + 1
+        }
+
+
+        let answer_4 = prompt("In che anno si sono tenuti gli ultimi Mondiali di calcio in Italia?").toLowerCase()
+        while(answer_4 === null){
+            answer_4 = prompt("In che anno si sono tenuti gli ultimi Mondiali di calcio in Italia?").toLowerCase()
+        }
+        if(answer_4 === "1990"){
+            points = points + 1
+        }
+
+        let answer_5 = prompt("La capitale del Brasile?").toLowerCase()
+        while(answer_5 === null){
+            answer_5 = prompt("La capitale del Brasile?").toLowerCase()
+        }
+        if(answer_5 === "brasilia"){
+            points = points + 1
+        }
+
+        alert("il tuo punteggio finale è di "+ points)
+
     </script>
 </body>
 </html>
