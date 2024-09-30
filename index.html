@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <script type="text/javascript">
         // 1. prendere input utente (let risposta = ...)
         // 2. Controllare se è != null
         // 3. Se è diverso da null ->  usa il metodo .toLowerCase sull'input inserito dall'utente
@@ -17,51 +17,52 @@
         alert("Benvenuto sul quiz di cultura generale di Galeazzi!! Premere OK per continuare")
 
         let points = 0
-        let answer_1 = prompt("In che anno è scoppiata la Rivoluzione francese?").toLowerCase()
+        let answer_1 = prompt("In che anno è scoppiata la Rivoluzione francese?")
         while(answer_1 === null){
-            answer_1 = prompt("In che anno è scoppiata la Rivoluzione francese?").toLowerCase()
+            answer_1 = prompt("In che anno è scoppiata la Rivoluzione francese?")
         }
-        if(answer_1 === "1789"){
+        if(answer_1.toLowerCase().trim() === "1789"){
             points = points + 1
         }
 
 
-        let answer_2 = prompt("Qual'è la capitale dell'italia").toLowerCase()
+        let answer_2 = prompt("Qual'è la capitale dell'italia")
         while(answer_2 === null){
-            answer_2 = prompt("Qual'è la capitale dell'italia").toLowerCase()
+            answer_2 = prompt("Qual'è la capitale dell'italia")
         }
-        if(answer_2 === "roma"){
+        if(answer_2.toLowerCase().trim() === "roma"){
             points = points + 1
         }
 
 
-        let nswer_3 = prompt("In quanti giorni completa la terra la sua orbita intorno al sole?").toLowerCase()
+        let nswer_3 = prompt("In quanti giorni completa la terra la sua orbita intorno al sole?")
         while(nswer_3 === null){
-            nswer_3 = prompt("In quanti giorni completa la terra la sua orbita intorno al sole?").toLowerCase()
+            nswer_3 = prompt("In quanti giorni completa la terra la sua orbita intorno al sole?")
         }
-        if(nswer_3 === "365"){
+        if(nswer_3.toLowerCase().trim() === "365"){
             points = points + 1
         }
 
 
-        let answer_4 = prompt("In che anno si sono tenuti gli ultimi Mondiali di calcio in Italia?").toLowerCase()
+        let answer_4 = prompt("In che anno si sono tenuti gli ultimi Mondiali di calcio in Italia?")
         while(answer_4 === null){
-            answer_4 = prompt("In che anno si sono tenuti gli ultimi Mondiali di calcio in Italia?").toLowerCase()
+            answer_4 = prompt("In che anno si sono tenuti gli ultimi Mondiali di calcio in Italia?")
         }
-        if(answer_4 === "1990"){
+        if(answer_4.toLowerCase().trim() === "1990"){
             points = points + 1
         }
 
-        let answer_5 = prompt("La capitale del Brasile?").toLowerCase()
+        let answer_5 = prompt("La capitale del Brasile?")
         while(answer_5 === null){
-            answer_5 = prompt("La capitale del Brasile?").toLowerCase()
+            answer_5 = prompt("La capitale del Brasile?")
         }
-        if(answer_5 === "brasilia"){
+        if(answer_5.toLowerCase().trim() === "brasilia"){
             points = points + 1
         }
 
         alert("il tuo punteggio finale è di "+ points)
-
+        let percentuale = (points*100)/5
+        alert("la percentuale delle risposte giuste è di "+ percentuale + "%")
     </script>
 </body>
 </html>
